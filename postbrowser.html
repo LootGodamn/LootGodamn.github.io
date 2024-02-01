@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body style = "background-color: #2D2827">
 
 <!-- Sidebar -->
 <div class="sidebar prevent-select" style = "display: block" id="sidebar">
@@ -40,111 +40,113 @@
 		<h3>Home</h3>
 	</a>
   
-	<a href="post.html">
-		<h4>About Me</h4>
+	<a href="about.html">
+		<h3>About Me</h3>
+	</a>
+	
+	<a>
+		<h4>All Posts</h4>
+	</a>
+	
+	<a>
+		<h4>Unreal Engine</h4>
+	</a>
+	
+	<a>
+		<h4>C++</h4>
+	</a>
+	
+	<a>
+		<h4>Python</h4>
+	</a>
+	
+	<a>
+		<h4>Uncategorized</h4>
 	</a>
 </div>
 
     <!-- Page Header -->
 <div class = "container prevent-select">
-	<h1 style = "text-align: center">All Posts</h1>
-	<hr>
+	<div class = "row">
+		<div class="dropdown" style = "float:left">
+		  <button class="dropbtn">Dropdown</button>
+		  <div class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		  </div>
+		</div>
+		<h2 style = "text-align: center">All Posts</h2>
+		<hr>
+	</div>
 </div>
     <!-- Main Content -->
  <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				
-                <div class="post-preview hover-slide">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Visualizing Music
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Raylib, JUCE, C++
-                        </h3>
-					</a>
-                    <p class="post-meta prevent-select">September 24, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview hover-slide">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Killing myself
-                        </h2>
-						<h3 class="post-subtitle">
-                            Knife, Rope, Chair, Pills
-                        </h3>
-                    </a>
-                    <p class="post-meta prevent-select">September 18, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview hover-slide">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Crystal is wife material
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Yes
-                        </h3>
-                    </a>
-                    <p class="post-meta prevent-select">August 24, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview hover-slide">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Hopium
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Delusions
-                        </h3>
-                    </a>
-                    <p class="post-meta prevent-select">July 8, 2014</p>
-                </div>
-				<hr>
+        <div class="row" >
+            <div class=" scroll-box">
+				<ul class = "list-inline">
+					<li class = "scroll-item">
+						<div class="post-preview hover-slide">
+							<a href="post.html">
+								<img src = "img/post-sample-image.jpg" class = "post-preview-img">
+								<h2 class="post-title">
+									Visualizing Music
+								</h2>
+								<h3 class="post-subtitle">
+									Raylib, JUCE, C++
+								</h3>
+							</a>
+							<p class="post-meta prevent-select">September 24, 2014</p>
+						</div>
+					</li>
+					<li class = "scroll-item">
+						<div class="post-preview hover-slide scroll-item">
+							<a href="post.html">
+								<img src = "img/post-sample-image.jpg" class = "post-preview-img">
+								<h2 class="post-title">
+									Killing myself
+								</h2>
+								<h3 class="post-subtitle">
+									Knife, Rope, Chair, Pills
+								</h3>
+							</a>
+							<p class="post-meta prevent-select">September 18, 2014</p>
+						</div>
+					</li>
+					<li class = "scroll-item">
+						<div class="post-preview hover-slide">
+							<a href="post.html">
+								<img src = "img/post-sample-image.jpg" class = "post-preview-img">
+								<h2 class="post-title">
+									Visualizing Music
+								</h2>
+								<h3 class="post-subtitle">
+									Raylib, JUCE, C++
+								</h3>
+							</a>
+							<p class="post-meta prevent-select">September 24, 2014</p>
+						</div>
+					</li>
+					<li class = "scroll-item">
+						<div class="post-preview hover-slide scroll-item">
+							<a href="post.html">
+								<img src = "img/post-sample-image.jpg" class = "post-preview-img">
+								<h2 class="post-title">
+									Killing myself
+								</h2>
+								<h3 class="post-subtitle">
+									Knife, Rope, Chair, Pills
+								</h3>
+							</a>
+							<p class="post-meta prevent-select">September 18, 2014</p>
+						</div>
+					</li>
+				</ul>
             </div>
         </div>
     </div>
 
     <hr>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCdygJ-e704XgAhVvmSTNQNw">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.artstation.com/juneminhtet5">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-font fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/LootGodamn">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 	
 	<script src="js/sidebar.js"></script>
 
