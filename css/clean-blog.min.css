@@ -160,22 +160,22 @@ body::-webkit-scrollbar-track {
   user-select: none; /* Standard syntax */
 }
 
-.scroll-box {
-	overflow-x: hidden; /* Hide horizontal scrollbar */
-	overflow-y: scroll; /* Add vertical scrollbar */
-	height: 75vh;
-	width: 90vw;
-	scroll-snap-type: y mandatory;
-}
-
-.scroll-item {
-	scroll-snap-align: start;
-	margin: 1rem;
+.post-preview-item {
+	width: 28vw;
+	padding-top: 1.5vw;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 0.4vw;
+	margin-right: 0.4vw;
+	margin-left: 0.4vw;
+	background-color:#16161B;
+	border-radius: 2rem;
 }
 
 .post-preview-img {
 	width: 25vw;
 	transition: transform .2s;
+	border-radius: 2rem;
 }
 
 .post-preview-img:hover {
