@@ -1,0 +1,188 @@
+/*Changing scrollbar colors*/
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bc9a81; /* Set the color of the thumb (the moving part) */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #544441; /* Set the color of the track (the non-moving part) */
+}
+
+/* For Firefox */
+html {
+    scrollbar-color: #bc9a81 #544441; /* Set the color of the scrollbar */
+	scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #bc9a81; /* Set the color of the thumb (the moving part) */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #544441; /* Set the color of the track (the non-moving part) */
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: transparent;
+    padding-top: 10px;
+	transition: left 0.3s ease-in-out;
+}
+
+.sidebar h3 {
+	background-color: black;
+	width: 300px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: white;
+}
+
+.sidebar h4 {
+    text-decoration: none;
+	background-color: #D4D836;
+	width: 250px;
+    font-size: 18px;
+	padding: 10px ;
+    color: white;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.post-preview-item {
+	width: 28vw;
+	padding-top: 1.5vw;
+	padding-bottom: 0.1vw;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 0.8vh;
+	margin-left: 0.4vw;
+	background-color:#16161B;
+	border-radius: 2rem;
+}
+
+.post-preview-img {
+	width: 25vw;
+	transition: transform .2s;
+	border-radius: 2rem;
+}
+
+.post-preview-img:hover {
+	transform: scale(1.05);
+}
+
+.category {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+	
+  color: white;
+  background-color:#544441;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  border:none;
+}
+
+/* Change color of dropdown links on hover */
+.category:hover {background-color: #BC9A81}
+
+/* Add a dark background to the active button */
+.category.active {
+  background-color: #BC9A81;
+  color: white;
+}
+
+.category:nth-child(3) {
+    transition-delay: 0.05s;
+}
+
+.category:nth-child(4) {
+    transition-delay: 0.05s;
+}
+
+.category:nth-child(5) {
+    transition-delay: 0.1s;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 3vh;
+  border-radius: 1rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  position: absolute;
+  background-color: transparent;
+  min-width: 2vw;
+  z-index: 1;
+  transform: translateY(-2rem);	
+  transition: transform 0.1s ease;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #544441;
+}
+
+.dropdown:hover .category {
+	opacity: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	transform: translateY(0);
+}
+
+/*Category filters*/
+.filterDiv {
+  float: left;
+  width: 28.5vw;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.outlinebtn {
+  background-color: transparent;
+  border:solid;
+  border-color: #544441;
+  border-collapse: separate;
+  border-width: medium;
+}
+
+.outlinebtn:hover {
+	background-color: #544441;
+}

@@ -34,49 +34,24 @@
 
 <body style = "background-color: #2D2827">
 
-<!-- Sidebar -->
-<div class="sidebar prevent-select" style = "display: block" id="sidebar">
-	<a href = "index.html">
-		<h3>Home</h3>
-	</a>
-  
-	<a href="about.html">
-		<h3>About Me</h3>
-	</a>
-	
-	<a>
-		<h4>All Posts</h4>
-	</a>
-	
-	<a>
-		<h4>Unreal Engine</h4>
-	</a>
-	
-	<a>
-		<h4>C++</h4>
-	</a>
-	
-	<a>
-		<h4>Python</h4>
-	</a>
-	
-	<a>
-		<h4>Uncategorized</h4>
-	</a>
-</div>
-
     <!-- Page Header -->
 <div class = "container prevent-select">
 	<div class = "row">
 		<div class="dropdown" style = "float:left">
-		  <button class="dropbtn">Dropdown</button>
-		  <div class="dropdown-content">
-			<a href="#">Link 1</a>
-			<a href="#">Link 2</a>
-			<a href="#">Link 3</a>
+		  <button class="dropbtn outlinebtn">Categories</button>
+		  <div class="dropdown-content" id = "categorycontainer">
+			<button class="category active" onclick="filterSelection('all')"> Show all</button>
+			<button class="category" onclick="filterSelection('unreal')">Unreal Engine</button>
+			<button class="category" onclick="filterSelection('cpp')">C++</button>
+			<button class="category" onclick="filterSelection('py')">Python</button>
+			<button class="category" onclick="filterSelection('none')">Uncategorized</button>
 		  </div>
 		</div>
-		<h2 style = "text-align: center">All Posts</h2>
+		<div>
+			<button class="dropbtn outlinebtn" style = "float:right; margin-left: 1rem" onclick = "window.location.href='index.html'">Home</button>
+			<button class="dropbtn outlinebtn" style = "float:right; margin-left: 1rem" onclick = "window.location.href='about.html';">About Me</button>
+		</div>
+		<h2 style = "display: flex; justify-content: center;" id = "categorydisplay">All Posts</h2>
 		<hr>
 	</div>
 </div>
@@ -84,62 +59,54 @@
  <div class="container">
         <div class="row"  style = "width: 90vw; left:10vw;">
 				<ul class = "list-inline">
-					<li class = "post-preview-item">
-						<div class="post-preview hover-float">
-							<a href="post.html">
-								<img src = "img/post-sample-image.jpg" class = "post-preview-img">
-								<h2 class="post-title">
-									Visualizing Music
-								</h2>
-								<h3 class="post-subtitle">
-									Raylib, JUCE, C++
-								</h3>
-							</a>
-							<p class="post-meta prevent-select">September 24, 2014</p>
-						</div>
-					</li>
-					<li class = "post-preview-item">
-						<div class="post-preview hover-float scroll-item">
-							<a href="post.html">
-								<img src = "img/post-sample-image.jpg" class = "post-preview-img">
-								<h2 class="post-title">
-									Killing myself
-								</h2>
-								<h3 class="post-subtitle">
-									Knife, Rope, Chair, Pills
-								</h3>
-							</a>
-							<p class="post-meta prevent-select">September 18, 2014</p>
-						</div>
-					</li>
-					<li class = "post-preview-item">
-						<div class="post-preview hover-float">
-							<a href="post.html">
-								<img src = "img/post-sample-image.jpg" class = "post-preview-img">
-								<h2 class="post-title">
-									Visualizing Music
-								</h2>
-								<h3 class="post-subtitle">
-									Raylib, JUCE, C++
-								</h3>
-							</a>
-							<p class="post-meta prevent-select">September 24, 2014</p>
-						</div>
-					</li>
-					<li class = "post-preview-item">
-						<div class="post-preview hover-float scroll-item">
-							<a href="post.html">
-								<img src = "img/post-sample-image.jpg" class = "post-preview-img">
-								<h2 class="post-title">
-									Killing myself
-								</h2>
-								<h3 class="post-subtitle">
-									Knife, Rope, Chair, Pills
-								</h3>
-							</a>
-							<p class="post-meta prevent-select">September 18, 2014</p>
-						</div>
-					</li>
+						<div class="post-preview hover-float post-preview-item filterDiv cpp">
+								<a href="post.html">
+									<img src = "img/post-sample-image.jpg" class = "post-preview-img" alt = "">
+									<h2 class="post-title">
+										Visualizing Music
+									</h2>
+									<h3 class="post-subtitle">
+										Raylib, JUCE, C++
+									</h3>
+								</a>
+								<p class="post-meta prevent-select">September 24, 2014</p>
+							</div>
+						<div class="post-preview hover-float post-preview-item filterDiv unreal">
+								<a href="post.html">
+									<img src = "img/post-sample-image.jpg" class = "post-preview-img" alt = "">
+									<h2 class="post-title">
+										Procedural Spider
+									</h2>
+									<h3 class="post-subtitle">
+										Control Rigs, Animation
+									</h3>
+								</a>
+								<p class="post-meta prevent-select">September 18, 2014</p>
+							</div>
+					<div class="post-preview hover-float post-preview-item filterDiv py">
+								<a href="post.html">
+									<img src = "img/post-sample-image.jpg" class = "post-preview-img" alt = "">
+									<h2 class="post-title">
+										Python project
+									</h2>
+									<h3 class="post-subtitle">
+										python, boa, cobra
+									</h3>
+								</a>
+								<p class="post-meta prevent-select">September 24, 2014</p>
+							</div>
+						<div class="post-preview hover-float post-preview-item filterDiv none">
+								<a href="post.html">
+									<img src = "img/post-sample-image.jpg" class = "post-preview-img" alt = "">
+									<h2 class="post-title">
+										Killing myself
+									</h2>
+									<h3 class="post-subtitle">
+										Knife, Rope, Chair, Pills
+									</h3>
+								</a>
+								<p class="post-meta prevent-select">September 18, 2014</p>
+							</div>
 				</ul>
             </div>
     </div>
@@ -183,6 +150,7 @@
     </footer>
 	
 	<script src="js/sidebar.js"></script>
+	<script src="js/postfilter.js"></script>
 
 </body>
 
